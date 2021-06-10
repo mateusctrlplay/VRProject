@@ -19,7 +19,7 @@ public class BallController : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collision coll)
+    void OnCollisionEnter(Collision coll)
     {
         if (coll.gameObject.tag == "Target")
         {                         

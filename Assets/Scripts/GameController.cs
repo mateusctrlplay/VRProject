@@ -6,8 +6,8 @@ public class GameController : MonoBehaviour
 {
 
     public int points;
-    public float time;
-    public bool isGameOver; //true false
+    public float time; 
+    public bool isGameOver; //true false // verdeiro Falso
 
     // Start is called before the first frame update
     void Start()
