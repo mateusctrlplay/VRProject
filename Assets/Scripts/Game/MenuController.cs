@@ -11,16 +11,15 @@ public class MenuController : MonoBehaviour
 
     void Start()
     {
-        changeDifficultyUI.SetActive(false); //Oculta os botões de mudar dificuldade
-        mainMenuUI.SetActive(true); //mostra os botões de Play e Difficulty
+        changeDifficultyUI.SetActive(false);
+        mainMenuUI.SetActive(true);
 
-        PlayerPrefs.SetFloat("shipspeed", 5); //salva a velocidade da nave
+        PlayerPrefs.SetFloat("shipspeed", 5);
     }
 
-    //Função a ser execultada pelo StartButton, quando apertar ele
     public void StartGame()
     {
-        SceneManager.LoadScene("Game"); //Muda para a cena "Game"
+        SceneManager.LoadScene("Game");
     }
 
     public void ChangeDifficulty()
